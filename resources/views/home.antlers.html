@@ -1,0 +1,76 @@
+{{ partial:foo }}
+
+<div>
+    <div>
+        <div>
+            <div>
+                aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+                {{ form:create in="contact" }}
+                    {{ if errors }}
+                        <div class="aaaaaaaaaaaaaaa">
+                            {{ errors }}
+                                {{ value }}<br>
+                            {{ /errors }}
+                        </div>
+                    {{ /if }}
+
+                    {{ if success }}
+                        <div class="aaaaaaaaaaaaaaaaaaa">
+                            Form was submitted successfully.
+                        </div>
+                    {{ /if }}
+
+                    <div >
+                        {{ fields }}
+                            {{ if type == 'text' }}
+                                <div >
+                                    <label for="contact-{{ handle }}">{{ display }}</label>
+                                    <input class="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" style="" id="contact-{{ handle }}" type="{{ html_type }}" name="{{ handle }}" value="{{ old }}" />
+                                </div>
+                            {{ elseif type == 'textarea' }}
+                            <div class="col mt-6">
+                                <label class="block type-caption-sm m-0 mb-3 text-blue-mid" for="contact-{{ handle }}">{{ display }}</label>
+                                <textarea class="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa" id="contact-{{ handle }}" name="{{ handle }}" style="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">{{ old }}</textarea>
+                            </div>
+                            {{ elseif type == 'toggle' }}
+                            <div class="col mt-6">
+                                <label class="block" for="contact-{{ handle }}">
+                                    <input type="checkbox" id="contact-{{ handle }}" name="{{ handle }}">
+                                    <span class="aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa">{{ display }}</span>
+                                    {{ instructions | markdown }}
+                                </label>
+                            </div>
+                            {{ /if }}
+                        {{ /fields }}
+                    </div>
+
+                    {{ partial:foo/bar type="submit" label="Send Message" }}
+
+                {{ /form:create }}
+            </div>
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaa
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaaaaaaaaaa
+
+aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+aaaaaaaaaaaaaaaaaa
+        </div>
+    </div>
+</div>

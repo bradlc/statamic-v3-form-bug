@@ -1,0 +1,35 @@
+title: 'Contact Form'
+sections:
+  main:
+    display: Main
+    fields:
+      -
+        handle: name
+        field:
+          html_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Name
+      -
+        handle: text
+        field:
+          html_type: text
+          type: text
+          localizable: false
+          listable: hidden
+          display: Text
+      -
+        handle: textarea
+        field:
+          type: textarea
+          localizable: false
+          listable: hidden
+          display: Textarea
+      -
+        handle: toggle
+        field:
+          type: toggle
+          localizable: false
+          listable: hidden
+          display: Toggle
